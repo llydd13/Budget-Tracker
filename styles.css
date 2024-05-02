@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e6e6fa; /* Lavender */
+}
+.title-container {
+    border: 2px solid #ff69b4; /* Hot Pink */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f0f8ff; /* Alice Blue */
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    color: #ff69b4; /* Hot Pink */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #add8e6; /* Light Blue */
+}
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #ff69b4; /* Hot Pink */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff1493; /* Deep Pink */
+}
+#calculateIcon {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+p.remaining-budget {
+    color: #9370db; /* Medium Purple */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.warning {
+    background-color: #ffcccc; /* Light Red */
+    color: #ff0000; /* Red */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+.input-label {
+    color: #ff69b4; /* Hot Pink */
+}

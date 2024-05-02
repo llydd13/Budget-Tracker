@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="title-container">
+        <h1>「 ✦ Budget Tracker ✦ 」</h1>
+    </div>
+    <label for="budgetAmount" class="input-label">Enter Budget Amount:</label>
+    <input type="number" id="budgetAmount" name="budgetAmount" required>
+    <label for="currency" class="input-label">Choose Currency:</label>
+    <select id="currency" name="currency">
+        <option value="₱">PHP</option>
+        <option value="$">USD</option>
+        <option value="€">EUR</option>
+        <option value="£">GBP</option>
+        <option value="¥">JPY</option>
+        <option value="AU$">AUD</option>
+    </select>
+
+    <form id="budgetForm">
+        <label for="item" class="input-label">Item:</label>
+        <input type="text" id="item" name="item" required>
+        <label for="amount" class="input-label">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="category" class="input-label">Category:</label>
+        <select id="category" name="category">
+            <option value="food">Food</option>
+            <option value="clothing">Clothing</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="Misc">Miscellaneous</option>
+            <!-- Add more categories as needed -->
+        </select>
+        <button type="submit">Add</button>
+    </form>
+    <table id="budgetTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Amount</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Budget items will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <p class="remaining-budget">Remaining Budget: <span id="currencySymbol"></span><span id="remainingBudget">0.00</span></p>
+
+    <div id="warning" class="warning">( ˶°ㅁ°)!! Out of budget!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
